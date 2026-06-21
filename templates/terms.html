@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block title %}Terms and Conditions — Spendly{% endblock %}
+
+{% block content %}
+
+<section class="terms-section">
+    <div class="terms-container">
+        <h1 class="terms-title">Terms and Conditions</h1>
+        <p class="terms-intro">Last updated: June 21, 2026</p>
+
+        <div class="terms-content">
+            <div class="terms-block">
+                <h2 class="terms-heading">1. Acceptance of Terms</h2>
+                <p>
+                    By accessing and using Spendly ("the Service"), you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service. Spendly reserves the right to make changes to these terms at any time.
+                </p>
+            </div>
+
+            <div class="terms-block">
+                <h2 class="terms-heading">2. Use of Service</h2>
+                <p>
+                    Spendly is a personal expense tracking application designed to help you log, categorize, and analyze your spending patterns. You agree to use this Service only for lawful purposes and in a way that does not infringe upon the rights of others or restrict their use and enjoyment of the Service.
+                </p>
+                <p>
+                    Prohibited behavior includes:
+                </p>
+                <ul class="terms-list">
+                    <li>Harassing or causing distress or inconvenience to any person</li>
+                    <li>Transmitting or causing to be transmitted obscene, offensive, or inflammatory content</li>
+                    <li>Disrupting the normal flow of dialogue within our web application</li>
+                    <li>Attempting to gain unauthorized access to our systems</li>
+                </ul>
+            </div>
+
+            <div class="terms-block">
+                <h2 class="terms-heading">3. User Data and Privacy</h2>
+                <p>
+                    Spendly stores your expense data, including transaction amounts, categories, dates, and descriptions. Your personal information is treated with the utmost care and will not be shared with third parties without your explicit consent, except as required by law.
+                </p>
+                <p>
+                    You are responsible for:
+                </p>
+                <ul class="terms-list">
+                    <li>Maintaining the confidentiality of your account credentials</li>
+                    <li>All activities that occur under your account</li>
+                    <li>Notifying us immediately of any unauthorized use of your account</li>
+                </ul>
+            </div>
+
+            <div class="terms-block">
+                <h2 class="terms-heading">4. Limitations of Liability</h2>
+                <p>
+                    Spendly is provided on an "as is" and "as available" basis. To the fullest extent permissible by law, Spendly disclaims all warranties, express or implied, including but not limited to implied warranties of merchantability and fitness for a particular purpose.
+                </p>
+                <p>
+                    Spendly will not be liable for any damages resulting from:
+                </p>
+                <ul class="terms-list">
+                    <li>Loss of data or financial records</li>
+                    <li>Service interruptions or unavailability</li>
+                    <li>Errors or inaccuracies in data tracking</li>
+                    <li>Unauthorized access to your account</li>
+                </ul>
+                <p>
+                    To the maximum extent permitted by law, in no event shall Spendly, its founders, or employees be liable for any indirect, punitive, special, incidental, or consequential damages.
+                </p>
+            </div>
+
+            <div class="terms-block">
+                <h2 class="terms-heading">5. Changes to Terms</h2>
+                <p>
+                    Spendly reserves the right, at any time and in our sole discretion, to modify, alter, or update these Terms and Conditions. We will notify you of any material changes via email or by posting a notice on the Service. Your continued use of the Service after such modifications constitutes your acceptance of the updated terms.
+                </p>
+            </div>
+
+            <div class="terms-block">
+                <h2 class="terms-heading">6. Governing Law</h2>
+                <p>
+                    These Terms and Conditions are governed by and construed in accordance with the laws of India, and you irrevocably submit to the exclusive jurisdiction of the courts located therein.
+                </p>
+            </div>
+
+            <div class="terms-block">
+                <h2 class="terms-heading">7. Contact Us</h2>
+                <p>
+                    If you have any questions or concerns about these Terms and Conditions, please contact us at support@spendly.app.
+                </p>
+            </div>
+        </div>
+
+        <div class="terms-footer-nav">
+            <a href="{{ url_for('landing') }}" class="btn-ghost">Back to Home</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
