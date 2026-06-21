@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+
+{% block title %}Privacy Policy — Spendly{% endblock %}
+
+{% block content %}
+
+<section class="terms-section">
+    <div class="terms-container">
+        <h1 class="terms-title">Privacy Policy</h1>
+        <p class="terms-intro">Last updated: June 21, 2026</p>
+
+        <div class="terms-content">
+            <div class="terms-block">
+                <h2 class="terms-heading">Data We Collect</h2>
+                <p>
+                    Spendly collects the following information from our users to provide and improve the expense tracking service:
+                </p>
+                <ul class="terms-list">
+                    <li><strong>Account Information:</strong> Your name, email address, and password when you create an account with us.</li>
+                    <li><strong>Expense Data:</strong> Transaction amounts, merchant names, dates, categories, descriptions, and tags that you manually enter.</li>
+                    <li><strong>Usage Data:</strong> Information about how you interact with the Service, including pages visited, features used, and time spent on the application.</li>
+                    <li><strong>Device Information:</strong> Your device type, operating system, browser type, and IP address to ensure compatibility and security.</li>
+                    <li><strong>Payment Information:</strong> If you upgrade to a premium plan, billing information is collected by our payment processor and is not stored on our servers.</li>
+                </ul>
+            </div>
+
+            <div class="terms-block">
+                <h2 class="terms-heading">Data Storage</h2>
+                <p>
+                    Your expense data and personal information are stored securely on our encrypted servers located in India. We implement industry-standard security measures including:
+                </p>
+                <ul class="terms-list">
+                    <li>SSL/TLS encryption for data in transit</li>
+                    <li>AES-256 encryption for data at rest</li>
+                    <li>Regular security audits and penetration testing</li>
+                    <li>Restricted access to personal data (limited to essential staff)</li>
+                    <li>Automatic backups for data recovery</li>
+                </ul>
+                <p>
+                    We do not sell, rent, or share your personal information with third parties for marketing purposes. Your data is yours alone, and we respect your privacy completely.
+                </p>
+                <p>
+                    You may request to download, modify, or delete your data at any time. For deletion requests, your account and associated expense records will be permanently removed from our servers within 30 days of request.
+                </p>
+            </div>
+
+            <div class="terms-block">
+                <h2 class="terms-heading">Third Party Services</h2>
+                <p>
+                    Spendly uses the following third-party services to enhance functionality and user experience:
+                </p>
+                <ul class="terms-list">
+                    <li><strong>Analytics:</strong> We use Google Analytics to understand user behavior and improve our Service. Google Analytics collects anonymized data and does not have access to personal expense information.</li>
+                    <li><strong>Payment Processing:</strong> Payments for premium plans are processed by secure third-party payment gateways. We do not store credit card information directly.</li>
+                    <li><strong>Hosting:</strong> Our servers are hosted on secure cloud infrastructure with industry-leading security standards.</li>
+                </ul>
+                <p>
+                    These third parties have agreed to confidentiality agreements and are bound by their own privacy policies. We encourage you to review their privacy policies as well.
+                </p>
+            </div>
+
+            <div class="terms-block">
+                <h2 class="terms-heading">Your Rights</h2>
+                <p>
+                    You have the right to:
+                </p>
+                <ul class="terms-list">
+                    <li>Access all personal data we hold about you</li>
+                    <li>Request corrections to inaccurate data</li>
+                    <li>Request deletion of your account and all associated data</li>
+                    <li>Opt out of non-essential analytics and tracking</li>
+                    <li>Export your expense data in a standard format</li>
+                </ul>
+                <p>
+                    To exercise any of these rights, please contact us at the email address provided below.
+                </p>
+            </div>
+
+            <div class="terms-block">
+                <h2 class="terms-heading">Cookies</h2>
+                <p>
+                    Spendly uses cookies to improve your experience, maintain your session, and remember your preferences. You can control cookie settings through your browser, though disabling cookies may affect the functionality of the Service.
+                </p>
+            </div>
+
+            <div class="terms-block">
+                <h2 class="terms-heading">Data Retention</h2>
+                <p>
+                    We retain your expense data as long as your account is active. If you delete your account, all personal data and expense records are deleted within 30 days. Aggregated, anonymized data may be retained for analytics purposes.
+                </p>
+            </div>
+
+            <div class="terms-block">
+                <h2 class="terms-heading">Changes to This Privacy Policy</h2>
+                <p>
+                    We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify you of material changes via email or by posting a notice on our Service. Your continued use of the Service indicates your acceptance of the updated policy.
+                </p>
+            </div>
+
+            <div class="terms-block">
+                <h2 class="terms-heading">Contact Us</h2>
+                <p>
+                    If you have any questions about this Privacy Policy, your personal data, or wish to exercise your privacy rights, please contact us at:
+                </p>
+                <p>
+                    <strong>Email:</strong> privacy@spendly.app<br>
+                    <strong>Address:</strong> Spendly, India<br>
+                    <strong>Response Time:</strong> We will respond to all privacy inquiries within 7 business days.
+                </p>
+            </div>
+        </div>
+
+        <div class="terms-footer-nav">
+            <a href="{{ url_for('landing') }}" class="btn-ghost">Back to Home</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
