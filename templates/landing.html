@@ -6,55 +6,62 @@
 
 <section class="hero">
     <div class="hero-inner">
-        <div class="hero-badge">Personal Finance Tracker</div>
+        <div class="hero-badge">●Free to use · No credit card needed</div>
         <h1 class="hero-title">
-            Know where your<br>
-            <em>money goes</em>
+            Track every rupee.<br>
+            <span class="hero-accent">Know where it goes.</span>
         </h1>
         <p class="hero-subtitle">
-            Log expenses, understand your spending patterns,
-            and take control of your financial life —
-            one transaction at a time.
+            Spendly helps you log expenses, spot patterns,<br>
+            and stay on budget — without the spreadsheet headache.
         </p>
         <div class="hero-actions">
-            <a href="{{ url_for('register') }}" class="btn-primary">Start tracking free</a>
-            <a href="{{ url_for('login') }}" class="btn-ghost">Sign in</a>
+            <a href="{{ url_for('register') }}" class="btn-hero btn-hero-primary">Create free account</a>
+            <a href="#" class="btn-hero btn-hero-secondary" id="videoBtn">See how it works</a>
         </div>
     </div>
     <div class="hero-visual">
         <div class="mock-card">
-            <div class="mock-card-header">
-                <span class="mock-label">March 2026</span>
-                <span class="mock-total">₹12,450</span>
+            <div class="mock-card-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+            </div>
+            <div class="mock-metrics">
+                <div class="mock-metric">
+                    <span class="mock-metric-label">This month</span>
+                    <span class="mock-metric-value">₹18,240</span>
+                    <span class="mock-metric-change negative">+12% vs last</span>
+                </div>
+                <div class="mock-metric">
+                    <span class="mock-metric-label">Budget left</span>
+                    <span class="mock-metric-value">₹6,760</span>
+                    <span class="mock-metric-change positive">43% remaining</span>
+                </div>
+                <div class="mock-metric">
+                    <span class="mock-metric-label">Transactions</span>
+                    <span class="mock-metric-value">34</span>
+                    <span class="mock-metric-change light">this month</span>
+                </div>
             </div>
             <div class="mock-bars">
                 <div class="mock-bar-row">
-                    <span class="mock-cat">Bills</span>
-                    <div class="mock-bar-track">
-                        <div class="mock-bar" style="width: 72%"></div>
-                    </div>
-                    <span class="mock-amt">₹4,500</span>
-                </div>
-                <div class="mock-bar-row">
                     <span class="mock-cat">Food</span>
                     <div class="mock-bar-track">
-                        <div class="mock-bar mock-bar-2" style="width: 52%"></div>
+                        <div class="mock-bar mock-bar-orange" style="width: 68%"></div>
                     </div>
-                    <span class="mock-amt">₹3,200</span>
                 </div>
                 <div class="mock-bar-row">
-                    <span class="mock-cat">Health</span>
+                    <span class="mock-cat">Travel</span>
                     <div class="mock-bar-track">
-                        <div class="mock-bar mock-bar-3" style="width: 33%"></div>
+                        <div class="mock-bar mock-bar-blue" style="width: 45%"></div>
                     </div>
-                    <span class="mock-amt">₹2,050</span>
                 </div>
                 <div class="mock-bar-row">
-                    <span class="mock-cat">Transport</span>
+                    <span class="mock-cat">Bills</span>
                     <div class="mock-bar-track">
-                        <div class="mock-bar mock-bar-4" style="width: 28%"></div>
+                        <div class="mock-bar mock-bar-purple" style="width: 35%"></div>
                     </div>
-                    <span class="mock-amt">₹1,800</span>
                 </div>
             </div>
         </div>
@@ -88,5 +95,16 @@
         <a href="{{ url_for('register') }}" class="btn-primary">Create free account</a>
     </div>
 </section>
+
+<!-- Video Modal -->
+<div id="videoModal" class="video-modal">
+    <div class="video-modal-overlay" id="modalOverlay"></div>
+    <div class="video-modal-content">
+        <button class="video-modal-close" id="modalClose">&times;</button>
+        <div class="video-container">
+            <iframe id="videoFrame" class="video-frame" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Spendly Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
 
 {% endblock %}
